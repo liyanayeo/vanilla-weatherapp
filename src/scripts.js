@@ -33,12 +33,12 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
 
-  temperatureElement.innerHTML = Math.round(response.data.main.temperature);
+  temperatureElement.innerHTML = Math.round(response.data.temp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = Math.round(response.data.humidity);
   windElement.innerHTML = Math.round(response.data.wind);
-  dateElement.innerHTML = formateDate(response.data.dt * 1000);
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 let apiKey = "t9fbed0c49f69aaa4826cecb20340o76";
