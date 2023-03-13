@@ -35,6 +35,9 @@ li {
   line-height: 20px;
   padding: 0;
   margin: 0;
+}
+
+li::first-letter {
   text-transform: capitalize;
 }
 
