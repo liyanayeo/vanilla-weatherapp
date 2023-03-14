@@ -149,3 +149,7 @@ li:first-letter {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
+
+.weather-temperature .units {
+  position: relative;
+}
